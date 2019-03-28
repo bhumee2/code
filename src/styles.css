@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+	margin:0; padding:0;
+}
+body {
+	width: 100%;
+	max-width:1920px;
+	position:relative;
+	margin:0 auto;
+	font-family:"Arial Black", Gadget, sans-serif;
+	background:#000;
+	color:#fff;
+}
+a {text-decoration: none; outline:0;}
+a:active {color:#ccc;}
+h1 , h2, h3, h4, h5 , h6 {padding:0; margin:0;}
+ul li {list-style-type:none;}
+img {display:block; max-width:100%; width:100%;}
+.toLeft {float:left;}
+.toRight {float:right;}
+.clear {clear:both;}
+.mainContainer {
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}

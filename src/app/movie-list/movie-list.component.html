@@ -1,0 +1,16 @@
+<div class="movieListWrapper" *ngIf="movies">
+
+<h1> List of Movies are as below:</h1>
+<ul class="movieList" [@animate]="movies">
+	<li *ngFor="let movie of movies">
+    	<a class="movie" routerLink='movie-detail/{{ movie._id }}'>
+    		<div class="imageContainer">
+                <img src="https://image.tmdb.org/t/p/w500/{{ movie.posterURL }}" title="{{ movie.title }}"/>
+            </div>
+            <h5>{{ movie.title }}</h5>
+        </a>
+        <p>{{ movie.releaseDate | date }}</p>
+    </li>
+</ul>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="detailsPageWrapper"  *ngIf="movies">
+    <div class="detailsPage">
+        <img class="bigPoster" src="https://image.tmdb.org/t/p/w1280{{ movies.backdropURL }}" title="{{ movies.title }}"/>
+    </div>
+    <div class="detailWrapper">
+    	<div class="mvImgDescWrapper">
+            <div class="moveimageContainer">
+                <img src="https://image.tmdb.org/t/p/w500/{{ movies.posterURL }}" title="{{ movies.title }}"/>
+            </div>
+            
+            <div class="moviedetail">
+                <div class="movieInnerWrapper">
+                    <h5>{{ movies.title }}</h5>
+                    <p>Release: {{ movies.releaseDate | date  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="movieDesc">
+        	<p>{{ movies.plot }}</p>
+        </div>
+    </div>
+</div>
